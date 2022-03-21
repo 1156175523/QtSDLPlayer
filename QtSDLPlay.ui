@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtSDLPlayClass</class>
+ <widget class="QWidget" name="QtSDLPlayClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtSDLPlay</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>621</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="buttonLayout">
+    <item>
+     <widget class="QLineEdit" name="filePath"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="openFile">
+      <property name="text">
+       <string>打开</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="selectFile">
+      <property name="text">
+       <string>选择文件</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QOpenGLWidget" name="videoWidget">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>180</y>
+     <width>331</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QtSDLPlay.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>selectFile</sender>
+   <signal>clicked()</signal>
+   <receiver>QtSDLPlayClass</receiver>
+   <slot>SelectLocalFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>411</x>
+     <y>715</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openFile</sender>
+   <signal>clicked()</signal>
+   <receiver>QtSDLPlayClass</receiver>
+   <slot>OpenFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>539</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>547</x>
+     <y>865</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>SelectLocalFile()</slot>
+  <slot>OpenFile()</slot>
+ </slots>
+</ui>
