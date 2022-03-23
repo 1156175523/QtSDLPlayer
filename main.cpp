@@ -1,7 +1,6 @@
 #include "QtSDLPlay.h"
 #include <QtWidgets/QApplication>
 #include <QWidget>
-#include "MySDL.h"
 
 char videoWidgetId[128] = { 0 };
 
