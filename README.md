@@ -11,8 +11,10 @@ Qt5.9_2015_64+SDL2.0+ffmpeg 实现播放器
 
 [QtSDLPlayer]=======【myLib】第三方库
 
-​                              ||              ||=====【ffmpeg】//ffmpeg库
+||       ||                    ||=====【ffmpeg】//ffmpeg库
 
-​                              ||              ||=====【SDL2.0】//SDL2.0库
+||       ||                    ||=====【SDL2.0】//SDL2.0库
 
-​                              ||===========项目文件main.cpp ....
+||       ||=========【GenerateFile】Qt生成的文件
+
+||===========项目文件main.cpp ....
